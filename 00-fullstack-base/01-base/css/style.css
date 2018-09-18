@@ -6,6 +6,8 @@
 body {
     background-color: #e4d2e6; /* determina a cor de fundo de um elemento */
     font-family: 'Lato', Arial, Helvetica, sans-serif; /* determina o tipo de fonte */
+    
+    
 }
 
 a {
@@ -17,7 +19,7 @@ img {
 }
 
 /* FONTS */
-h1 {
+#titulo {
     text-align: right; /* define o alinhamento do texto */
     font-size: 35px; /* define o tamanho da fonte. Unidades possíveis são px, em, rem, entre outros */
     text-transform: uppercase; /*define alguma mudança na própria fonte. Valores possíveis: lowercase, uppercase, capitalize */
@@ -34,42 +36,48 @@ p {
 }
 
 /* UTILITIES */
-.u-margin-small {
-    margin: 5px;
-}
 
-.sobre-conteudo {
+#descricao{
+    text-align: left;
+    margin-left: 110px;
+}
+main{
     width: 45%;
     display: inline-block;
 }
-
-.sobre-imagem {
+#blog{
+    text-align: center;
+}
+figure{
     width: 45%;
-    display: inline-block;
+    align-items: center;
 }
 
-.section-sobre {
+.container {
    width: 960px;
    margin: 0 auto; /* macete para deixar elementos block centralizados */
    margin-top: 100px;
+   display: flex;
+   
 }
 
-.sobre-conteudo__botoes {
+.buttons {
     text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
 }
 
-.btn {
-    padding: 10px 12px;
-    font-size: 16px;
-}
-
-.a {
+.buta {
     background-color: #5d1277;
+    padding: 10px 12px;
+    font-size: 16px;  
     color: white; /* define a cor do conteúdo do elemento */
 }
 
-.b {
+.butb {
     color: #5d1277;
+    margin: 5px;
+    padding: 10px 12px;
+    font-size: 16px;
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
 }
+
 
